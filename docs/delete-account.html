@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delete Your Account · BottleScan</title>
+    <style>
+        :root {
+            --sage: #52a9ab;
+            --clay: #d96b6b;
+            --ink: #0c1024;
+            --ink-muted: #8894c8;
+            --surface: #161c38;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background: var(--ink);
+            color: #e9ecf8;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .wrap {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 48px 20px 64px;
+        }
+
+        h1 {
+            font-size: 28px;
+            margin: 0 0 8px;
+            color: #ffffff;
+        }
+
+        .subtitle {
+            color: var(--ink-muted);
+            margin: 0 0 40px;
+            font-size: 15px;
+        }
+
+        h2 {
+            font-size: 19px;
+            margin: 40px 0 12px;
+            color: #ffffff;
+        }
+
+        p {
+            margin: 0 0 16px;
+        }
+
+        ol {
+            padding-left: 0;
+            list-style: none;
+            counter-reset: step;
+            margin: 0 0 24px;
+        }
+
+        ol li {
+            position: relative;
+            padding: 0 0 20px 52px;
+            counter-increment: step;
+        }
+
+        ol li::before {
+            content: counter(step);
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background: var(--sage);
+            color: var(--ink);
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .delete-label {
+            color: var(--clay);
+            font-weight: 600;
+        }
+
+        figure {
+            margin: 32px 0;
+            text-align: center;
+        }
+
+        figure img {
+            max-width: 320px;
+            width: 100%;
+            border-radius: 24px;
+            border: 1px solid rgba(136, 148, 200, 0.25);
+        }
+
+        figcaption {
+            color: var(--ink-muted);
+            font-size: 13px;
+            margin-top: 12px;
+        }
+
+        .note {
+            background: var(--surface);
+            border: 1px solid rgba(136, 148, 200, 0.2);
+            border-radius: 16px;
+            padding: 18px 20px;
+            margin: 32px 0;
+        }
+
+        .note strong {
+            color: #ffffff;
+        }
+
+        a {
+            color: var(--sage);
+        }
+
+        .questions {
+            margin-top: 48px;
+            padding-top: 24px;
+            border-top: 1px solid rgba(136, 148, 200, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <h1>Delete Your Account</h1>
+        <p class="subtitle">How to permanently delete your BottleScan account and associated data.</p>
+
+        <p>You can delete your BottleScan account at any time from directly within the app. Deleting your
+            account permanently removes your account and the bottle data associated with it. This action cannot
+            be undone.</p>
+
+        <h2>Steps to delete your account</h2>
+        <ol>
+            <li>Open the <strong>BottleScan</strong> app on your phone.</li>
+            <li>Sign in to your account if you are not already authenticated.</li>
+            <li>Go to the <strong>Settings</strong> page.</li>
+            <li>Tap <span class="delete-label">Delete account</span> and confirm when prompted.</li>
+        </ol>
+
+        <figure>
+            <img src="../assets/delete_account.png" alt="The BottleScan Settings page showing the Delete account option" />
+            <figcaption>The Settings page, where you'll find the Delete account option.</figcaption>
+        </figure>
+
+        <div class="note">
+            <p style="margin:0;"><strong>Heads up:</strong> Deleting your account is permanent. Once confirmed,
+                your account and its bottle data are removed and cannot be recovered.</p>
+        </div>
+
+        <div class="questions">
+            <h2>Questions?</h2>
+            <p>If you have any questions or need help deleting your account, email us at
+                <a href="mailto:app.bottlescan@gmail.com">app.bottlescan@gmail.com</a>.</p>
+        </div>
+    </div>
+</body>
+</html>
